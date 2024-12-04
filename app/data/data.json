@@ -1,0 +1,20 @@
+{
+    "education": [
+      {
+        "major": "ENTER YOUR MAJOR",
+        "university": "Name of Your University ",
+        "years": "2000"
+      },
+      {
+        "major": "ENTER YOUR MAJOR",
+        "university": "Name of Your University",
+        "years": "2009-2012"
+      },
+      {
+        "major": "ENTER YOUR MAJOR",
+        "university": "Name of Your University",
+        "years": "2009-2016"
+    }
+    ]
+}
+    

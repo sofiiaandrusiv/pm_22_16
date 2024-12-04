@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume | Sofiia Andrusiv </title>
+    <link href="css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+<div class="container">
+    <div class="content">
+        <section class="left">
+            <div class="mini-icon-box">
+                <img class="icon" src="./img/placeholder.png">
+                <div class="mini-icon-contacts">
+                    <h4 class="addres__title">Area</h4>
+                    <p class="addres__description">Your Street Adress Here</p>
+                </div>
+            </div>
+            <div class="photo">
+                <img
+                        class="photo_image"
+                        src="./img/photo.jpg"
+                        alt="profile picture"
+                />
+            </div>
+           
+            <div class="education">
+                <div class="drop-box">
+                    <h3 class="left_title">education</h3>
+                    <hr>
+                </div>
+                <!-- Місце для рендерингу освіти через JavaScript -->
+                <div id="education-section" class="education_list">
+                    <div class="education_card">
+                        <h4 class="education_card__title">Enter your major</h4>
+                        <p class="education_card__text">Name Of Your University Here</p>
+                        <p class="education_card__text">2005-2009</p>
+                    </div>
+                    <div class="education_card">
+                        <h4 class="education_card__title">Enter your major</h4>
+                        <p class="education_card__text">Name Of Your University Here</p>
+                        <p class="education_card__text">2009-2011</p>
+                    </div>
+                    <div class="education_card">
+                        <h4 class="education_card__title">Enter your major</h4>
+                        <p class="education_card__text">Name Of Your University Here</p>
+                        <p class="education_card__text">2009-2011</p>
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                function renderEducation(education) {
+                    const section = document.getElementById("education-section");
+                    section.innerHTML = ""; // Очищаємо існуючі елементи
+            
+                    education.forEach((item) => {
+                        section.innerHTML += `
+                            <div class="education_card">
+                                <h4 class="education_card__title">${item.major}</h4>
+                                <p class="education_card__text">${item.university}</p>
+                                <p class="education_card__text">${item.years}</p>
+                            </div>`;
+                    });
+                }
+            
+                // Приклад даних для рендерингу
+                const educationData = [
+                    {
+                        major: "Computer Science",
+                        university: "University of Example",
+                        years: "2005-2009"
+                    },
+                    {
+                        major: "Software Engineering",
+                        university: "Example University",
+                        years: "2009-2011"
+                    },
+                    {
+                        major: "Web Development",
+                        university: "Another Example University",
+                        years: "2011-2013"
+                    }
+                ];
+            
+                // Викликаємо функцію для рендерингу даних
+                renderEducation(educationData);
+            </script>
+            
+           
+            
+            <div class="hobbies">
+                <div class="drop-box">
+                    <h3 class="left_title hobbies_title">hobbies</h3>
+                    <hr>
+                </div>
+                <div class="hobbies_list">
+                    <div class="hobbies_item">
+                        <img class="icon" src="./img/travel.png" alt="" />
+                        <p class="item_text">Travel</p>
+                    </div>
+                    <div class="hobbies_item">
+                        <img class="icon" src="./img/audio.png" alt="" />
+                        <p class="item_text">Music</p>
+                    </div>
+                    <div class="hobbies_item">
+                        <img class="icon" src="./img/document.png" alt="" />
+                        <p class="item_text">Writing</p>
+                    </div>
+                    <div class="hobbies_item">
+                        <img class="icon" src="./img/chess.png" alt="" />
+                        <p class="item_text">Chess</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blue-bar"></div>
+        </section>
+        <section class="right">
+
+            <div class="contact-info">
+                <div class="info-box">
+                    <p class="info-title">PHONE</p>
+                    <p>+000 123 456 789</p>
+                </div>
+                <div class="info-box">
+                    <p class="info-title">EMAIL</p>
+                    <p>username@gmail.com</p>
+                </div>
+                <div class="info-box">
+                    <p class="info-title">WEB</p>
+                    <p>www.websitename.com</p>
+                </div>
+            </div>
+
+            <div class="header">
+                <h1 class="header_title">alex</h1>
+                <h1 class="header_title surname"> brahar</h1>
+                <hr>
+                <p class="header__text">ui designer</p>
+                <div class="aboutme">
+                    <p class="aboutme_text">
+                        Lorem ipsum dolor a consectetur adipiscing elitse eiusmod tempor
+                        incididunt labore dolore magna aliqua. Quis ipsum suspendisse
+                        ultrices gravida. Risus commodo
+                    </p>
+                </div>
+            </div>
+            <div class="experience">
+                <div class="drop-box">
+                    <h3 class="left_title">Experience</h3>
+                    <hr>
+                </div>
+                <div class="experience_list">
+                    <div class="experience_card">
+                        <h4 class="experience_card__title">Enter Job Position Here</h4>
+                        <h5 class="experience_card__subtitle">
+                            <span>Present</span> Company Name / Location
+                        </h5>
+                        <p class="experience_card__text">
+                            Lorem ipsum dolor sit amet, this isthis is a thena consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        </p>
+                    </div>
+                    <div class="experience_card">
+                        <h4 class="experience_card__title">Enter Job Position Here</h4>
+                        <h5 class="experience_card__subtitle">
+                            <span>2017 - 2019</span> Company Name / Location
+                        </h5>
+                        <p class="experience_card__text">
+                            Lorem ipsum dolor sit amet, this isthis is a thena consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        </p>
+                    </div>
+                    <div class="experience_card">
+                        <h4 class="experience_card__title">Enter Job Position Here</h4>
+                        <h5 class="experience_card__subtitle">
+                            <span>2015 - 2017</span> 
+                        </h5>
+                        <p class="experience_card__text">
+                            Lorem ipsum dolor sit amet, this isthis is a thena consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="expertise">
+                <div class="drop-box">
+                    <h2 class="left_title">Expertise</h2>
+                    <hr>
+                </div>
+                <div class="expertise__items">
+                    <div class="skills">
+                        <div class="skill">
+                            <svg class="circle" data-percent="75" width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="bg" cx="60" cy="60" r="50" />
+                                <circle class="fg" cx="60" cy="60" r="50" />
+                                <text class="inner-text" x="50%" y="45%" text-anchor="middle" dominant-baseline="middle">Adobe
+                                    <tspan x="50%" dy="1em">Photoshop</tspan></text>
+                            </svg>
+                        </div>
+                        <div class="skill">
+                            <svg class="circle" data-percent="75" width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="bg" cx="60" cy="60" r="50" />
+                                <circle class="fg" cx="60" cy="60" r="50" />
+                                <text class="inner-text" x="50%" y="45%" text-anchor="middle" dominant-baseline="middle">Adobe
+                                    <tspan x="50%" dy="1em">Illustrator</tspan></text>
+                            </svg>
+                        </div>
+                        <div class="skill">
+                            <svg class="circle" data-percent="75" width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="bg" cx="60" cy="60" r="50" />
+                                <circle class="fg" cx="60" cy="60" r="50" />
+                                <text class="inner-text" x="50%" y="45%" text-anchor="middle" dominant-baseline="middle">Adobe
+                                    <tspan x="50%" dy="1em">Indesign</tspan></text>
+                            </svg>
+                        </div>
+                        <div class="skill">
+                            <svg class="circle" data-percent="75" width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="bg" cx="60" cy="60" r="50" />
+                                <circle class="fg" cx="60" cy="60" r="50" />
+                                <text class="inner-text" x="50%" y="45%" text-anchor="middle" dominant-baseline="middle">Power
+                                    <tspan x="50%" dy="1em">Point</tspan></text>
+                            </svg>
+                        </div>
+
+                        <!-- Додаткові кола можна додавати аналогічно -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="static-background"></div>
+<script src="./js/main.js"></script>
+
+</body>
+</html>
